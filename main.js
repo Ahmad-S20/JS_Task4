@@ -10,7 +10,7 @@ async function getPizza(){
    const posts = data.map(function(e){
 
     return`<div class="product" >
-        <h2>${e.title}</h2>
+        <div class="product-title"><h2>${e.title}</h2></div>
         <img src="${e.image_url}" alt="${e.title}">
         </div>`;
 }).join(``);

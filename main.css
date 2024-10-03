@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*body{
+    background-color: rgba(16, 16, 55, 0.796);
+    color: white;
+}
+
+.container{
+    width: calc(100% - 122px);
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product{
+   width: calc((100% - 20px) / 2);
+}
+img {
+    width: 400px;
+    height: 300px;
+}*/
+
+body {
+    background-color: rgba(16, 16, 55, 0.796);
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container styling */
+.container{
+    width: calc(100% - 200px);
+    margin: auto;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+/* Product card styling */
+.product {
+    text-align: center;
+    background-color: #292B4A;
+    width: calc((100% - 40px) / 2); /* Two products per row */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on product */
+.product:hover {
+    transform: scale(1.15);
+}
+
+
+/* Image styling */
+img {
+    width: 400px;
+    height: 300px;
+    border-bottom: 2px solid #444;
+}
+
+/* Product title */
+.product-title {
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
+    color: #f1f1f1;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .product {
+        width: 100%; /* One product per row on small screens */
+    }
+}
+
+.head h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FFA500; /* Bright orange */
+}
